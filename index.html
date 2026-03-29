@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duguláselhárítás Budapest - Bence és Dávid | Azonnali segítség</title>
+    <title>Duguláselhárítás Budapest - Bence és Dávid | Fix Áras Segítség</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -65,7 +65,11 @@
             border-radius: 50%;
             z-index: 0;
         }
-        /* Custom Scrollbar */
+        .price-card {
+            background: linear-gradient(145deg, #ffffff, #f0f9ff);
+            border: 2px solid #0ea5e9;
+        }
+        /* Egyedi görgetősáv */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: linear-gradient(#0ea5e9, #f97316); border-radius: 5px; }
@@ -86,6 +90,7 @@
                 
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#folyamat" class="text-gray-600 hover:text-primary font-semibold transition">Hogyan működik?</a>
+                    <a href="#arak" class="text-gray-600 hover:text-primary font-semibold transition text-primary">Árak</a>
                     <a href="#szolgaltatasok" class="text-gray-600 hover:text-primary font-semibold transition">Szolgáltatások</a>
                     <a href="#velemenyek" class="text-gray-600 hover:text-primary font-semibold transition">Vélemények</a>
                 </div>
@@ -93,7 +98,7 @@
                 <div class="flex items-center">
                     <a href="tel:+36303219637" class="pulse-btn inline-flex items-center gap-2 bg-gradient-to-r from-accent to-orange-400 hover:from-accentHover hover:to-accent text-white px-6 py-3.5 rounded-full font-bold transition transform hover:scale-105 shadow-xl text-sm sm:text-base">
                         <i class="fa-solid fa-phone-volume"></i>
-                        <span class="hidden sm:inline">+36 30 321 9637</span>
+                        <span class="hidden sm:inline">06 30 321 9637</span>
                         <span class="sm:hidden">Hívás</span>
                     </a>
                 </div>
@@ -109,319 +114,172 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-red-100 text-red-600 font-bold text-sm mb-8 shadow-sm">
-                        <span class="relative flex h-3 w-3">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-                        </span>
-                        Azonnali SOS Duguláselhárítás 0-24h
+                    <div class="inline-flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-red-100 text-red-600 font-bold text-sm shadow-sm">
+                            <span class="relative flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                            </span>
+                            SOS Ügyelet 0-24h
+                        </div>
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primaryDark font-bold text-sm shadow-sm">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Budapest Egész Területén
+                        </div>
                     </div>
                     <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-8">
                         Profi megoldás, <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-700">bontás nélkül!</span>
                     </h1>
                     <p class="text-xl text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                        Ne hagyja, hogy a dugulás tönkretegye a napját! <span class="text-gray-900 font-semibold underline decoration-accent/30">Bence és Dávid</span> modern gépekkel, tiszta munkával segít Önnek.
+                        Ne hagyja, hogy a dugulás tönkretegye a napját! <span class="text-gray-900 font-semibold underline decoration-accent/30">Fördős Bence és Madarász Dávid</span> modern gépekkel, tiszta munkával segít Önnek.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start">
-                        <a href="tel:+36301234567" class="w-full sm:w-auto text-center pulse-btn bg-gradient-to-r from-accent to-orange-500 text-white px-10 py-5 rounded-full font-extrabold text-xl transition shadow-2xl shadow-orange-200 flex items-center justify-center gap-3 transform hover:-translate-y-1">
+                        <a href="tel:+36303219637" class="w-full sm:w-auto text-center pulse-btn bg-gradient-to-r from-accent to-orange-500 text-white px-10 py-5 rounded-full font-extrabold text-xl transition shadow-2xl shadow-orange-200 flex items-center justify-center gap-3 transform hover:-translate-y-1">
                             <i class="fa-solid fa-bolt-lightning"></i>
-                            Kérem a segítséget!
+                            Hívjon Most!
                         </a>
-                        <div class="flex items-center gap-3 bg-white/80 backdrop-blur-md px-5 py-3 rounded-2xl border border-blue-50 shadow-sm">
-                            <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
-                                <i class="fa-solid fa-truck-fast"></i>
-                            </div>
-                            <span class="text-sm font-bold text-gray-700">45 percen belül ott vagyunk</span>
-                        </div>
                     </div>
                 </div>
 
                 <!-- Szakemberek Kártyája -->
-                <div class="relative max-w-md mx-auto lg:mr-0 group">
-                    <div class="bg-white/90 backdrop-blur-xl rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-8 relative z-10 border border-white transform transition duration-500 group-hover:scale-[1.02]">
-                        <div class="absolute -top-6 -left-6 bg-accent text-white px-6 py-2 rounded-2xl font-bold shadow-lg z-20 transform -rotate-12 group-hover:rotate-0 transition-transform">
+                <div class="relative max-w-lg mx-auto lg:mr-0 group">
+                    <div class="bg-white/95 backdrop-blur-xl rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] p-10 relative z-10 border border-white transform transition duration-500 group-hover:scale-[1.03]">
+                        <div class="absolute -top-6 -left-6 bg-accent text-white px-8 py-3 rounded-2xl font-bold shadow-lg z-20 transform -rotate-6 group-hover:rotate-0 transition-transform">
                             VALÓDI SZAKEMBEREK
                         </div>
                         
-                        <h3 class="font-heading font-extrabold text-2xl mb-8 text-center text-gray-800">Személyesen mi érkezünk:</h3>
+                        <h3 class="font-heading font-extrabold text-3xl mb-10 text-center text-gray-800 tracking-tight">Személyesen mi érkezünk:</h3>
                         
-                        <div class="space-y-5">
-                            <div class="flex items-center gap-5 p-4 rounded-3xl bg-gradient-to-r from-softBlue to-white border border-blue-50 transition hover:shadow-md">
-                                <div class="relative">
-                                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=150&h=150&fit=crop" alt="Dávid" class="w-20 h-20 rounded-2xl object-cover shadow-inner">
-                                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white p-1 rounded-lg border-2 border-white shadow-sm">
-                                        <i class="fa-solid fa-check text-[10px]"></i>
+                        <div class="space-y-8">
+                            <!-- Bence Profilja -->
+                            <div class="flex items-center gap-6 p-5 rounded-[2.5rem] bg-gradient-to-r from-softBlue to-white border border-blue-50 transition hover:shadow-xl hover:bg-white">
+                                <div class="relative flex-shrink-0">
+                                    <img src="4206.png" alt="Fördős Bence" class="w-32 h-32 rounded-[2.5rem] object-cover shadow-lg border-4 border-white">
+                                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white p-2 rounded-xl border-2 border-white shadow-md">
+                                        <i class="fa-solid fa-check text-xs"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-xl text-gray-900 leading-tight">Fördős Bence</h4>
-                                    <p class="text-sm text-primary font-bold uppercase tracking-wider">Duguláselhárító Mester</p>
-                                    <div class="flex text-yellow-400 text-xs mt-1.5 gap-0.5">
+                                    <h4 class="font-black text-2xl text-gray-900 leading-tight">Fördős Bence</h4>
+                                    <p class="text-sm text-primary font-extrabold uppercase tracking-widest mt-1">Duguláselhárító Mester</p>
+                                    <div class="flex text-yellow-400 text-sm mt-2 gap-1">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-5 p-4 rounded-3xl bg-gradient-to-r from-softOrange/40 to-white border border-orange-50 transition hover:shadow-md">
-                                <div class="relative">
-                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop" alt="Zoltán" class="w-20 h-20 rounded-2xl object-cover shadow-inner">
-                                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white p-1 rounded-lg border-2 border-white shadow-sm">
-                                        <i class="fa-solid fa-check text-[10px]"></i>
+                            <!-- Dávid Profilja -->
+                            <div class="flex items-center gap-6 p-5 rounded-[2.5rem] bg-gradient-to-r from-softOrange/40 to-white border border-orange-50 transition hover:shadow-xl hover:bg-white">
+                                <div class="relative flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="Madarász Dávid" class="w-32 h-32 rounded-[2.5rem] object-cover shadow-lg border-4 border-white">
+                                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white p-2 rounded-xl border-2 border-white shadow-md">
+                                        <i class="fa-solid fa-check text-xs"></i>
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-xl text-gray-900 leading-tight">Madarász Dávid</h4>
-                                    <p class="text-sm text-accent font-bold uppercase tracking-wider">Gépkezelő Szakember</p>
-                                    <div class="flex text-yellow-400 text-xs mt-1.5 gap-0.5">
+                                    <h4 class="font-black text-2xl text-gray-900 leading-tight">Madarász Dávid</h4>
+                                    <p class="text-sm text-accent font-extrabold uppercase tracking-widest mt-1">Gépkezelő Szakember</p>
+                                    <div class="flex text-yellow-400 text-sm mt-2 gap-1">
                                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mt-8 text-center bg-gray-900 text-white p-4 rounded-2xl font-bold text-sm flex items-center justify-center gap-3">
-                            <i class="fa-solid fa-shield-halved text-primary"></i>
-                            Személyes Garancia Minden Munkára
+                        <div class="mt-10 text-center bg-gray-900 text-white p-5 rounded-[1.5rem] font-bold text-base flex flex-col items-center justify-center gap-1">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-shield-halved text-primary"></i>
+                                <span>Garancia & Profizmus</span>
+                            </div>
+                            <div class="text-[10px] uppercase tracking-widest text-primary/70 mt-1">Budapest minden kerületében</div>
                         </div>
                     </div>
-                    <!-- Glow behind card -->
-                    <div class="absolute inset-0 bg-primary/20 rounded-[3rem] blur-3xl -z-10 group-hover:bg-primary/30 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-primary/20 rounded-[4rem] blur-[80px] -z-10 group-hover:bg-primary/30 transition duration-500"></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Statisztikai Sáv -->
-    <div class="bg-white border-y border-blue-50 py-12">
+    <!-- Árazás Szekció -->
+    <section id="arak" class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-                <div class="text-center group">
-                    <div class="inline-flex w-12 h-12 bg-blue-50 text-primary rounded-2xl items-center justify-center mb-3 group-hover:bg-primary group-hover:text-white transition duration-300">
-                        <i class="fa-solid fa-calendar-check"></i>
+            <div class="text-center mb-16">
+                <span class="text-primary font-black uppercase tracking-[0.2em] text-xs">Becsületes Árazás</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-gray-900 mt-4">Mennyibe kerül?</h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="price-card rounded-[3rem] p-8 md:p-12 shadow-2xl shadow-blue-100 flex flex-col md:flex-row items-center gap-10 relative overflow-hidden">
+                    <div class="absolute top-8 -right-12 bg-accent text-white px-12 py-2 rotate-45 font-bold shadow-lg tracking-wider">FIX ÁR</div>
+                    
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="font-heading font-black text-3xl text-gray-900 mb-6">Minden beltéri <br/><span class="text-primary">Duguláselhárítás</span></h3>
+                        <ul class="space-y-4 mb-2">
+                            <li class="flex items-center gap-3 justify-center md:justify-start">
+                                <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+                                <span class="text-gray-700 font-bold italic underline">Budapesten: 0 Ft Kiszállás</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center md:justify-start">
+                                <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+                                <span class="text-gray-700 font-medium">Spirálozás és Woma</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center md:justify-start">
+                                <i class="fa-solid fa-check-circle text-green-500 text-xl"></i>
+                                <span class="text-gray-700 font-medium">Teljes munkadíj</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="text-4xl font-heading font-black text-gray-900">15+</div>
-                    <div class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-1">Év tapasztalat</div>
-                </div>
-                <div class="text-center group">
-                    <div class="inline-flex w-12 h-12 bg-orange-50 text-accent rounded-2xl items-center justify-center mb-3 group-hover:bg-accent group-hover:text-white transition duration-300">
-                        <i class="fa-solid fa-stopwatch-20"></i>
+
+                    <div class="bg-gray-900 rounded-[2.5rem] p-10 text-center text-white min-w-[260px] shadow-2xl border-4 border-blue-500/20">
+                        <div class="text-sm font-bold uppercase tracking-widest text-blue-300 mb-2">Összesen:</div>
+                        <div class="text-6xl font-black mb-2 tracking-tighter">40.000</div>
+                        <div class="text-xl font-bold text-gray-400">Forint</div>
+                        <div class="mt-6 pt-6 border-t border-white/10 text-[10px] text-gray-500 font-black uppercase tracking-widest">
+                            Nincs éjszakai felár!
+                        </div>
                     </div>
-                    <div class="text-4xl font-heading font-black text-gray-900">45p</div>
-                    <div class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-1">Gyors kiérkezés</div>
                 </div>
-                <div class="text-center group">
-                    <div class="inline-flex w-12 h-12 bg-green-50 text-green-600 rounded-2xl items-center justify-center mb-3 group-hover:bg-green-600 group-hover:text-white transition duration-300">
-                        <i class="fa-solid fa-handshake"></i>
-                    </div>
-                    <div class="text-4xl font-heading font-black text-gray-900">100%</div>
-                    <div class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-1">Munkagarancia</div>
-                </div>
-                <div class="text-center group">
-                    <div class="inline-flex w-12 h-12 bg-yellow-50 text-yellow-600 rounded-2xl items-center justify-center mb-3 group-hover:bg-yellow-500 group-hover:text-white transition duration-300">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="text-4xl font-heading font-black text-gray-900">5.0</div>
-                    <div class="text-xs text-gray-500 font-bold uppercase tracking-widest mt-1">Ügyfél-elégedettség</div>
-                </div>
+                <p class="text-center mt-10 text-gray-400 text-sm max-w-xl mx-auto italic">
+                    * Fix ár minden beltéri lefolyóra érvényes Budapesten.
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Hogyan működik? (Dinamikusabb dizájn) -->
+    <!-- Folyamat -->
     <section id="folyamat" class="py-24 bg-gradient-to-b from-white to-softBlue">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <span class="text-primary font-black uppercase tracking-[0.2em] text-xs">Munkamenet</span>
-                <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-gray-900 mt-4">3 Egyszerű Lépés a tiszta otthonig</h2>
-            </div>
-            
-            <div class="grid lg:grid-cols-3 gap-12">
-                <!-- Step 1 -->
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-blue-100/50 border border-blue-50 relative group hover:-translate-y-2 transition duration-300">
-                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg absolute -top-8 left-10 group-hover:scale-110 transition duration-300">1</div>
-                    <div class="mt-4">
-                        <h4 class="font-heading font-bold text-2xl mb-4 text-gray-900">Hívás és Fix Ár</h4>
-                        <p class="text-gray-600 leading-relaxed italic">"Telefonon elmondom a problémát, és Gábor rögtön ad egy pontos árat."</p>
-                    </div>
+            <div class="grid lg:grid-cols-3 gap-12 text-center">
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-blue-50">
+                    <div class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center text-3xl font-black mx-auto mb-6">1</div>
+                    <h4 class="font-bold text-xl mb-4">Hívjon Minket</h4>
+                    <p class="text-gray-600">Bencével vagy Dáviddal egyeztet időpontot.</p>
                 </div>
-                <!-- Step 2 -->
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-blue-100/50 border border-blue-50 relative group hover:-translate-y-2 transition duration-300">
-                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-orange-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg absolute -top-8 left-10 group-hover:scale-110 transition duration-300">2</div>
-                    <div class="mt-4">
-                        <h4 class="font-heading font-bold text-2xl mb-4 text-gray-900">Gyors Kiszállás</h4>
-                        <p class="text-gray-600 leading-relaxed italic">"A megbeszélt időpontban pontosan érkeznek, felszerelt szervizautóval."</p>
-                    </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-blue-50">
+                    <div class="w-16 h-16 bg-accent text-white rounded-2xl flex items-center justify-center text-3xl font-black mx-auto mb-6">2</div>
+                    <h4 class="font-bold text-xl mb-4">Gyors Kiérkezés</h4>
+                    <p class="text-gray-600">Átlagosan 45 percen belül Budapesten vagyunk.</p>
                 </div>
-                <!-- Step 3 -->
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-blue-100/50 border border-blue-50 relative group hover:-translate-y-2 transition duration-300">
-                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 text-white rounded-2xl flex items-center justify-center text-3xl font-black shadow-lg absolute -top-8 left-10 group-hover:scale-110 transition duration-300">3</div>
-                    <div class="mt-4">
-                        <h4 class="font-heading font-bold text-2xl mb-4 text-gray-900">Garanciális Munka</h4>
-                        <p class="text-gray-600 leading-relaxed italic">"A dugulás megszűnik, tiszta terepet kapok vissza, és elégedetten fizetek."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Szolgáltatások (Színes kártyák) -->
-    <section id="szolgaltatasok" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-4xl font-extrabold text-gray-900 mb-6">Miben tudunk segíteni?</h2>
-                <div class="w-20 h-1.5 bg-accent mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-8 rounded-3xl bg-blue-50 border border-blue-100 hover:bg-blue-600 hover:text-white transition duration-500 group">
-                    <i class="fa-solid fa-sink text-4xl text-primary mb-6 group-hover:text-white transition"></i>
-                    <h3 class="font-bold text-xl mb-3">Mosogatók</h3>
-                    <p class="text-sm opacity-80 leading-relaxed">Zsírlerakódások és ételmaradékok okozta dugulások gépi tisztítása.</p>
-                </div>
-                <div class="p-8 rounded-3xl bg-orange-50 border border-orange-100 hover:bg-accent hover:text-white transition duration-500 group">
-                    <i class="fa-solid fa-toilet text-4xl text-accent mb-6 group-hover:text-white transition"></i>
-                    <h3 class="font-bold text-xl mb-3">WC dugulás</h3>
-                    <p class="text-sm opacity-80 leading-relaxed">Azonnali segítség, ha eldugult a főlefolyó vagy a WC csésze.</p>
-                </div>
-                <div class="p-8 rounded-3xl bg-green-50 border border-green-100 hover:bg-green-600 hover:text-white transition duration-500 group">
-                    <i class="fa-solid fa-shower text-4xl text-green-600 mb-6 group-hover:text-white transition"></i>
-                    <h3 class="font-bold text-xl mb-3">Fürdőszoba</h3>
-                    <p class="text-sm opacity-80 leading-relaxed">Kádak, zuhanyzók és padlóösszefolyók szakszerű karbantartása.</p>
-                </div>
-                <div class="p-8 rounded-3xl bg-purple-50 border border-purple-100 hover:bg-purple-600 hover:text-white transition duration-500 group">
-                    <i class="fa-solid fa-video text-4xl text-purple-600 mb-6 group-hover:text-white transition"></i>
-                    <h3 class="font-bold text-xl mb-3">Kamerázás</h3>
-                    <p class="text-sm opacity-80 leading-relaxed">Csőrendszer vizsgálata modern kamerával a pontos hibahely kereséshez.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vélemények (Színesebb vélemények) -->
-    <section id="velemenyek" class="py-24 bg-softBlue/30 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="font-heading text-4xl font-black text-gray-900 mb-4">Ügyfeleink elégedettsége</h2>
-                <div class="flex justify-center text-yellow-400 text-2xl gap-1">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-[2rem] border-b-4 border-primary shadow-lg">
-                    <p class="text-gray-600 italic mb-8">"Nagyon korrekt srácok! Zoltán jött ki, és pikk-pakk megoldotta a WC dugulást, amit egy másik 'szakember' már reménytelennek mondott."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-black text-primary">S</div>
-                        <div>
-                            <div class="font-bold">Szabó István</div>
-                            <div class="text-xs text-gray-500">Budapest, XIII. kerület</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-[2rem] border-b-4 border-accent shadow-lg md:-translate-y-4 transition hover:translate-y-0 duration-500">
-                    <p class="text-gray-600 italic mb-8">"Gáborral beszéltem telefonon, 40 percen belül itt volt. Tiszta munka, nincs csempeverés, nincs horror ár. Csak ajánlani tudom őket!"</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center font-black text-accent">M</div>
-                        <div>
-                            <div class="font-bold">Molnár Erika</div>
-                            <div class="text-xs text-gray-500">Gödöllő</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-[2rem] border-b-4 border-green-500 shadow-lg">
-                    <p class="text-gray-600 italic mb-8">"Profi gépekkel jöttek, és pillanatok alatt áttörték a zsíros dugulást a konyhában. Külön pont, hogy fel is takarítottak maguk után."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center font-black text-green-600">B</div>
-                        <div>
-                            <div class="font-bold">Bakos Gergő</div>
-                            <div class="text-xs text-gray-500">Budapest, II. kerület</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Végső CTA -->
-    <section class="py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900"></div>
-        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M54.627 0l.83.83L40 15.457 24.543 0h-4.086L35.914 15.457 20.457 30.914 0 10.457V14.543L16.373 30.914 0 47.286v4.086L20.457 30.914 35.914 46.371 20.457 61.829h4.086L40 46.371l15.457 15.457h4.086L44.086 46.371 59.543 30.914 80 51.371v-4.086L63.627 30.914 80 14.543V10.457L59.543 30.914 44.086 15.457 59.543 0h-4.086z\' fill=\'%23ffffff\' fill-opacity=\'0.1\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-            <h2 class="font-heading text-4xl md:text-6xl font-black text-white mb-10 leading-tight">Végezzen a dugulással <br/><span class="text-primary">még ma!</span></h2>
-            <div class="flex flex-col items-center gap-8">
-                <a href="tel:+36301234567" class="group relative inline-flex items-center gap-4 bg-white text-gray-900 px-12 py-6 rounded-full font-black text-3xl transition transform hover:scale-105 shadow-[0_20px_60px_rgba(14,165,233,0.4)]">
-                    <i class="fa-solid fa-phone-flip text-primary animate-pulse"></i>
-                    +36 30 321 9637
-                    <div class="absolute inset-0 rounded-full border-4 border-white animate-ping opacity-20"></div>
-                </a>
-                <div class="flex flex-wrap justify-center gap-6 text-blue-200 font-bold uppercase tracking-widest text-sm">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-clock"></i> 0-24 Hétvégén is</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-wallet"></i> Kedvező Fix Árak</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-medal"></i> Szakértő Kezek</span>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-blue-50">
+                    <div class="w-16 h-16 bg-green-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mx-auto mb-6">3</div>
+                    <h4 class="font-bold text-xl mb-4">Kész Munka</h4>
+                    <p class="text-gray-600">Tiszta, professzionális megoldás fix áron.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-16 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <div>
-                    <div class="flex items-center gap-2 mb-6 text-white">
-                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                            <i class="fa-solid fa-droplet text-sm"></i>
-                        </div>
-                        <span class="font-heading font-bold text-xl tracking-tighter uppercase">Dugulás<span class="text-primary">Mester</span></span>
-                    </div>
-                    <p class="text-sm leading-relaxed mb-6">Profi, tiszta és megbízható duguláselhárítás Budapesten és környékén. Több mint 15 év szakmai tapasztalattal várjuk hívását.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6 uppercase tracking-widest">Kapcsolat</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-4 group cursor-pointer">
-                            <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition">
-                                <i class="fa-solid fa-phone text-primary"></i>
-                            </div>
-                            <span class="font-bold text-white tracking-tight">+36 30 321 9637</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center">
-                                <i class="fa-solid fa-map-location-dot text-primary"></i>
-                            </div>
-                            <span class="text-sm">Budapest, Pest Megye</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white/5 p-6 rounded-3xl border border-white/5">
-                    <h4 class="text-white font-bold mb-4">Mire számíthat?</h4>
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3 text-sm">
-                            <i class="fa-solid fa-circle-check text-green-500"></i>
-                            <span>Nincs hétvégi felár</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-sm">
-                            <i class="fa-solid fa-circle-check text-green-500"></i>
-                            <span>Díjmentes tanácsadás</span>
-                        </div>
-                        <div class="flex items-center gap-3 text-sm">
-                            <i class="fa-solid fa-circle-check text-green-500"></i>
-                            <span>Számlaképes munkavégzés</span>
-                        </div>
-                    </div>
-                </div>
+    <footer class="bg-gray-950 text-gray-500 py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-white font-black text-2xl uppercase tracking-tighter">Dugulás<span class="text-primary">Mester</span></h2>
+                <p class="mt-4 text-sm max-w-md mx-auto">Személyes segítség Budapesten Fördős Bencétől és Madarász Dávidtól.</p>
             </div>
-            
-            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] font-bold">
-                <p>&copy; 2026 DugulásMester - Fördős Bence & Madarász Dávid</p>
-                <div class="flex gap-6 mt-6 md:mt-0">
-                    <a href="#" class="hover:text-primary transition">Adatvédelem</a>
-                    <a href="#" class="hover:text-primary transition">Impresszum</a>
-                </div>
+            <a href="tel:+36303219637" class="text-white text-2xl font-black hover:text-primary transition tracking-tight">06 30 321 9637</a>
+            <div class="mt-12 border-t border-white/5 pt-8 text-[10px] font-bold uppercase tracking-[0.3em]">
+                &copy; 2026 DugulásMester - Minden jog fenntartva.
             </div>
         </div>
     </footer>
